@@ -12,5 +12,19 @@
   "license": "ISC",
   "dependencies": {
     "xmldom": "^0.1.27"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pfan123/convertpath.git"
+  },
+  "keywords": [
+    "convert path",
+    "path",
+    "convertShapeToPath"
+  ],
+  "bugs": {
+    "url": "https://github.com/pfan123/convertpath/issues"
+  },
+  "homepage": "https://github.com/pfan123/convertpath#readme"  
 }
