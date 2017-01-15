@@ -1,7 +1,0 @@
-<xml xmlns="a" xmlns:c="./lite" x="y" c:x="y2">
-	
-	
-	<des>12222</des>
-	<path d="m122"/>
-	
-</xml>
