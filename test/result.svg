@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="10 10 1000 1000">
+  <path stroke="#666" fill="#fff" d="M50 50h100v100h-100z"/>
+  <path fill="red" d="M480 500a20 20 0 1 0 40 0a20 20 0 1 0 -40 0z"/>
+
+  <path d="M600,600h100v100h-100Z" style="background:#000;"/>
+  <path d="M40 500a60 60 0 1 0 120 0a60 60 0 1 0 -120 0z"/>
+  <g>
+  	<path stroke="#666" fill="green" d="M400 402a4 2 0 0 1 4 -2h92a4 2 0 0 1 4 2v96a4 2 0 0 1 -4 2h-92a4 2 0 0 1 -4 -2z"/>
+  </g>
+
+ <path fill="blue" d="M160 500a40 20 0 1 0 80 0a40 20 0 1 0 -80 0z"/> 
+
+<path stroke="#fff" d="M20 20L180 180"/>
+<path d="M30 70a190 20 0 1 0 380 0a190 20 0 1 0 -380 0z"/>
+
+<path fill="orange" d="M200 200L300 300 400 200z"/>
+<path fill="orange" stroke="#000" d="M100 200L20 180 180 180 180 20"/>
+</svg>

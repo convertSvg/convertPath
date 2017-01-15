@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="10 10 1000 1000">
+  <rect x="50" y="50" width="100" height="100" stroke="#666" fill="#fff"></rect>
+  <circle cx="500" cy="500" r="20" fill="red"/>
+
+  <path d="M600,600h100v100h-100Z" style="background:#000;"/>
+  <circle cx="100" cy="500" r="60"/>
+  <g>
+  	<rect x="400" y="400" width="100" height="100" rx="4" ry="2" stroke="#666" fill="green"></rect>
+  </g>
+
+ <ellipse rx="40" ry="20" cx="200" cy="500" fill="blue"></ellipse> 
+
+<line x1="20" y1="20" x2="180" y2="180" stroke="#fff"></line>
+<ellipse cx="220" cy="70" rx="190" ry="20"/>
+
+<polygon points="200,200 300,300 400,200" fill="orange"/>
+<polyline points="100 200, 20 180, 180 180, 180 20" fill="orange" stroke="#000" />
+</svg>
