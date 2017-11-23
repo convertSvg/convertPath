@@ -2194,6 +2194,7 @@ var fn = function (node, Doc) {
   var newPathNode = generatePathNode(node, Doc);
   var path = '';
   var attrsToRomove = [];
+  var isChanged = true;
 
   switch (tagName) {
     case 'rect': {
@@ -2219,14 +2220,10 @@ var fn = function (node, Doc) {
 
       // 如果其中一个设置为 0 则圆角不生效
       path = (rx === 0 || ry === 0) ? [
-        ("M" + x + " " + (y + ry)),
-        ("a" + rx + " " + ry + " 0 0 1 " + rx + " " + (-ry)),
-        ("h" + (width - rx - rx)),
-        ("a" + rx + " " + ry + " 0 0 1 " + rx + " " + ry),
-        ("v" + (height - ry - ry)),
-        ("a" + rx + " " + ry + " 0 0 1 " + (-rx) + " " + ry),
-        ("h" + (rx + rx - width)),
-        ("a" + rx + " " + ry + " 0 0 1 " + (-rx) + " " + (-ry)),
+        ("M" + x + " " + y),
+        ("h" + width),
+        ("v" + height),
+        ("h" + (-width)),
         'z'
       ].join('') : [
         ("M" + x + " " + (y + ry)),
@@ -2275,8 +2272,9 @@ var fn = function (node, Doc) {
         ].join('');
 
         attrsToRomove = ['cx', 'cy', 'rx', 'ry'];
+      } else {
+        isChanged = false;
       }
-
       break
     }
 
@@ -2289,8 +2287,9 @@ var fn = function (node, Doc) {
       if (!isNaN(x1 - y1 + x2 - y2)) {
         path = "M" + x1 + " " + y1 + "L" + x2 + " " + y2;
         attrsToRomove = ['x1', 'y1', 'x2', 'y2'];
+      } else {
+        isChanged = false;
       }
-
       break
     }
 
@@ -2303,24 +2302,29 @@ var fn = function (node, Doc) {
       if (points.length >= 4) {
         var a = points[0];
         var b = points[1];
-        var c = points[2];
-        var d = points[3];
+        var rest = points.slice(2);
         path = [
           ("M" + a + " " + b),
-          ("L" + c + " " + d),
+          ("L" + (rest.join(' '))),
           (tagName === 'polygon' ? 'z' : '')
         ].join('');
 
-        newPathNode.removeAttribute('points');
+        attrsToRomove = ['points'];
+      } else {
+        isChanged = false;
       }
-
       break
     }
+
+    default:
+      isChanged = false;
   }
 
-  newPathNode.setAttribute('d', path);
-  attrsToRomove.forEach(function (attr) { return newPathNode.removeAttribute(attr); });
-  node.parentNode.replaceChild(newPathNode, node);
+  if (isChanged) {
+    newPathNode.setAttribute('d', path);
+    attrsToRomove.forEach(function (attr) { return newPathNode.removeAttribute(attr); });
+    node.parentNode.replaceChild(newPathNode, node);
+  }
 };
 
 var convertShapeToPath$1 = {
