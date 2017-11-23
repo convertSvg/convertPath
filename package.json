@@ -2,18 +2,23 @@
   "name": "convertpath",
   "version": "1.0.2",
   "description": "base svg element convert path",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "parse": "node ./lib/index.js",
-    "ts": "node ./test/index.js"
+    "release": "rollup -c rollup.config.js",
+    "test": "node ./test/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "xmldom": "^0.1.27"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "rollup": "^0.51.8",
+    "rollup-plugin-buble": "^0.18.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/pfan123/convertpath.git"
@@ -26,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/pfan123/convertpath/issues"
   },
-  "homepage": "https://github.com/pfan123/convertpath#readme"  
+  "homepage": "https://github.com/pfan123/convertpath#readme"
 }
