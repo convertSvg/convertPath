@@ -1,7 +1,19 @@
 {
-    "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "single"]
-    },
-    "extends": "standard"
+  "extends": ["standard"],
+  "rules": {
+    "no-redeclare:": ["off"],
+    "no-var": 1,
+    "no-case-declarations": 0,
+    "comma-dangle": ["error", "only-multiline"],
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "eqeqeq": ["warn", "always", { "null": "ignore" }],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ]
+  }
 }
