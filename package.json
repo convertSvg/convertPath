@@ -1,46 +1,47 @@
 {
-    "name": "convertpath",
-    "version": "1.0.2",
-    "description": "base svg element convert path",
-    "main": "./lib/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "parse": "node ./lib/index.js",
-        "ts": "node ./test/index.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{js,json,css,md}": [
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "dependencies": {
-        "xmldom": "^0.1.27"
-    },
-    "devDependencies": {
-        "eslint": "^5.14.1",
-        "eslint-config-standard": "^12.0.0",
-        "husky": "^1.3.1",
-        "prettier": "^1.16.4"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/pfan123/convertpath.git"
-    },
-    "keywords": [
-        "convert path",
-        "path",
-        "convertShapeToPath"
-    ],
-    "bugs": {
-        "url": "https://github.com/pfan123/convertpath/issues"
-    },
-    "homepage": "https://github.com/pfan123/convertpath#readme"
+  "name": "convertpath",
+  "version": "1.0.2",
+  "description": "base svg element convert path",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse": "node ./lib/index.js",
+    "ts": "node ./test/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "xmldom": "^0.1.27"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
+    "prettier": "^1.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pfan123/convertpath.git"
+  },
+  "keywords": [
+    "convert path",
+    "path",
+    "convertShapeToPath"
+  ],
+  "bugs": {
+    "url": "https://github.com/pfan123/convertpath/issues"
+  },
+  "homepage": "https://github.com/pfan123/convertpath#readme"
 }
