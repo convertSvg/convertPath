@@ -1,12 +1,16 @@
 const fs = require('fs')
 const SVGParser = require('../lib/index.js')
 
-const parse = SVGParser.parse('./test/test.svg', [
-  {
-    // convertShapeToPath: true,
-    removeGroups: true,
-  },
-])
+const parse = SVGParser.parse('./test/test.svg', {
+  plugins: [
+    {
+      convertShapeToPath: true,
+    },
+    {
+      removeGroups: true,
+    },
+  ],
+})
 
 const result = parse.toSimpleSvg()
 console.log(result)
