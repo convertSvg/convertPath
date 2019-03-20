@@ -57,4 +57,16 @@ console.log(parse.toSimpleSvg())
 
 ```
 
+## API
+
+#### SVGParser.parse(filename)
+
+#### SVGParser.parseStr(svgString)
+
+#### SVGParser.parseNode(node)
+
+#### parse.toSimpleSvg()
+
+#### parse.getPathAttributes
+
 `注意：`svg 区分大小写， 如 viewBox 与 viewbox, minify 压缩会导致 viewBox 变成小写
