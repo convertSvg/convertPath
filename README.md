@@ -24,3 +24,5 @@ console.log(parse.toSimpleSvg())
  */
 
 ```
+
+`注意：`svg 区分大小写， 如 viewBox 与 viewbox, minify 压缩会导致 viewBox 变成小写

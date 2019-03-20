@@ -9,7 +9,11 @@ const parse = SVGParser.parse('./test/test.svg', {
     {
       removeGroups: true,
     },
+    {
+      viewBoxTransform: true, // 必须放到最后
+    },
   ],
+  size: 1000,
 })
 
 const result = parse.toSimpleSvg()
