@@ -1,8 +1,17 @@
 const fs = require('fs')
-const parse = require('../lib/index.js')
+const SVGParser = require('../lib/index.js')
 
-parse.parse('./test/test.svg')
+const parse = SVGParser.parse('./test/test.svg', [
+  {
+    // convertShapeToPath: true,
+    removeGroups: true,
+  },
+])
+
 const result = parse.toSimpleSvg()
 console.log(result)
 
-fs.writeFile('./test/result.svg', result, 'utf-8')
+const paths = parse.getPathAttributes()
+console.log(paths)
+
+fs.writeFileSync('./test/result.svg', result, 'utf-8')
