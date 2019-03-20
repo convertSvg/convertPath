@@ -8,12 +8,44 @@ A node lib to convert svg shape elements into path svg elements.
 npm install convertpath
 ```
 
+## What it can do
+
+convertpath has a plugin-based architecture, so almost every optimization is a separate plugin.
+
+Today we have:
+
+| Plugin                                                                            | Description                                                              |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| convertShapeToPath                                                                | convert svg shape elements into path svg elements.                       |
+| removeGroups                                                                      | move some group and move some group attributes to the contained elements |
+| viewBoxTransform(https://github.com/svg/svgo/blob/master/plugins/inlineStyles.js) | remove width/height attributes and reset ViewBox                         |
+
 ## Usage
 
 ```
-const parse = require('convertpath');
+const SVGParser = require('convertpath')
 
-parse.parse("./test/test.svg")
+const parse = SVGParser.parse('./test/test.svg', {
+  plugins: [
+    {
+      convertShapeToPath: true,
+    },
+    {
+      removeGroups: true,
+    },
+    {
+      viewBoxTransform: true, // 必须放到最后
+    },
+  ],
+  size: 1000, default 1024
+})
+
+const result = parse.toSimpleSvg()
+console.log(result)
+
+const paths = parse.getPathAttributes()
+console.log(paths)
+
 /**
  * '<circle cx="500" cy="500" r="20" fill="red"/>'
  */
