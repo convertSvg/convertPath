@@ -14,11 +14,11 @@ convertpath has a plugin-based architecture, so almost every optimization is a s
 
 Today we have:
 
-| Plugin                                                                            | Description                                                              |
-| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| convertShapeToPath                                                                | convert svg shape elements into path svg elements.                       |
-| removeGroups                                                                      | move some group and move some group attributes to the contained elements |
-| viewBoxTransform(https://github.com/svg/svgo/blob/master/plugins/inlineStyles.js) | remove width/height attributes and reset ViewBox                         |
+| Plugin                                                                                                    | Description                                                              |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [convertShapeToPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertShapeToPath.js) | convert svg shape elements into path svg elements.                       |
+| [removeGroups](https://github.com/pfan123/convertpath/blob/master/lib/filter/removeGroups.js)             | move some group and move some group attributes to the contained elements |
+| [viewBoxTransform](https://github.com/pfan123/convertpath/blob/master/lib/filter/viewBoxTransform.js)     | remove width/height attributes and reset ViewBox                         |
 
 ## Usage
 
