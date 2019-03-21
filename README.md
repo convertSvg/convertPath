@@ -69,4 +69,11 @@ console.log(parse.toSimpleSvg())
 
 #### parse.getPathAttributes
 
-`注意：`svg 区分大小写， 如 viewBox 与 viewbox, minify 压缩会导致 viewBox 变成小写
+## Special thanks
+
+[SVGO](https://github.com/svg/svgo)
+[fontello](https://github.com/fontello/svgpath)
+[W3C SVG11](https://www.w3.org/TR/SVG11/)
+
+`注意：`
+1.svg 区分大小写， 如 `viewBox` 与 `viewbox`, `minify` 压缩会导致 `viewBox` 变成小写 2.`stroke-width` 属性指定了当前对象的轮廓的宽度。它的默认值是 1。如果使用了一个 `<percentage>`，这个值代表当前视口的百分比。如果使用了 0 值，则将不绘制轮廓。`viewBox` 变更 `stroke-width` 也需要变更。
