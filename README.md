@@ -37,7 +37,7 @@ const parse = SVGParser.parse('./test/test.svg', {
       viewBoxTransform: true, // 必须放到最后
     },
   ],
-  size: 1000, default 1024
+  size: 1000, // default 1024
 })
 
 const result = parse.toSimpleSvg()
