@@ -1,4 +1,4 @@
-## convertpath [![npm](https://img.shields.io/badge/npm-convertpath-green.svg?style=flat-square)](https://www.npmjs.com/package/convertpath)
+## convertPath [![npm](https://img.shields.io/badge/npm-convertpath-green.svg?style=flat-square)](https://www.npmjs.com/package/convertpath)
 
 A node lib to convert svg shape elements into path svg elements.
 
