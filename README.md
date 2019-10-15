@@ -14,11 +14,12 @@ convertpath has a plugin-based architecture, so almost every optimization is a s
 
 Today we have:
 
-| Plugin                                                                                                    | Description                                                              |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [convertShapeToPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertShapeToPath.js) | convert svg shape elements into path svg elements.                       |
-| [removeGroups](https://github.com/pfan123/convertpath/blob/master/lib/filter/removeGroups.js)             | move some group and move some group attributes to the contained elements |
-| [viewBoxTransform](https://github.com/pfan123/convertpath/blob/master/lib/filter/viewBoxTransform.js)     | remove width/height attributes and reset ViewBox                         |
+| Plugin                                                                                                              | Description                                                              |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [convertShapeToPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertShapeToPath.js)           | convert svg shape elements into path svg elements.                       |
+| [removeGroups](https://github.com/pfan123/convertpath/blob/master/lib/filter/removeGroups.js)                       | move some group and move some group attributes to the contained elements |
+| [viewBoxTransform](https://github.com/pfan123/convertpath/blob/master/lib/filter/viewBoxTransform.js)               | remove width/height attributes and reset ViewBox                         |
+| [convertTransfromforPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertTransfromforPath.js) | remove transform attribute and convert path data to relative             |
 
 ## Usage
 
