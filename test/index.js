@@ -1,7 +1,7 @@
 const fs = require('fs')
 const SVGParser = require('../lib/index.js')
 
-const parse = SVGParser.parse('./test/qcrod.svg', {
+const parse = SVGParser.parse('./test/test.svg', {
   plugins: [
     {
       convertShapeToPath: true,
@@ -10,10 +10,10 @@ const parse = SVGParser.parse('./test/qcrod.svg', {
       removeGroups: true,
     },
     {
-      viewBoxTransform: true, // 必须放到最后
+      convertTransfromforPath: true,
     },
     {
-      convertTransfromforPath: true,
+      viewBoxTransform: true, // 必须放到最后
     },
   ],
   size: 1000,

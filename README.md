@@ -35,6 +35,9 @@ const parse = SVGParser.parse('./test/test.svg', {
       removeGroups: true,
     },
     {
+      convertTransfromforPath: true,
+    },
+    {
       viewBoxTransform: true, // 必须放到最后
     },
   ],
