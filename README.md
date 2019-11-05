@@ -16,10 +16,12 @@ Today we have:
 
 | Plugin                                                                                                              | Description                                                              |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [convertUseToGroup](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertUseToGroup.js)             | convert defs and symbol elements into group svg elements.                |
+|  |
 | [convertShapeToPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertShapeToPath.js)           | convert svg shape elements into path svg elements.                       |
 | [removeGroups](https://github.com/pfan123/convertpath/blob/master/lib/filter/removeGroups.js)                       | move some group and move some group attributes to the contained elements |
-| [viewBoxTransform](https://github.com/pfan123/convertpath/blob/master/lib/filter/viewBoxTransform.js)               | remove width/height attributes and reset ViewBox                         |
 | [convertTransfromforPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertTransfromforPath.js) | remove transform attribute and convert path data to relative             |
+| [viewBoxTransform](https://github.com/pfan123/convertpath/blob/master/lib/filter/viewBoxTransform.js)               | remove width/height attributes and reset ViewBox                         |
 
 ## Usage
 
@@ -28,6 +30,9 @@ const SVGParser = require('convertpath')
 
 const parse = SVGParser.parse('./test/test.svg', {
   plugins: [
+    {
+      convertUseToGroup: true, // at first
+    },
     {
       convertShapeToPath: true,
     },
@@ -38,10 +43,10 @@ const parse = SVGParser.parse('./test/test.svg', {
       convertTransfromforPath: true,
     },
     {
-      viewBoxTransform: true, // 必须放到最后
+      viewBoxTransform: true, // at last
     },
   ],
-  size: 1000, // default 1024
+  size: 1000,
 })
 
 const result = parse.toSimpleSvg()
@@ -79,7 +84,7 @@ console.log(parse.toSimpleSvg())
 - [fontello](https://github.com/fontello/svgpath)
 - [W3C SVG11](https://www.w3.org/TR/SVG11/)
 
-`注意：`
+> `注意：`
 
-- 1.svg 区分大小写， 如 `viewBox` 与 `viewbox`, `minify` 压缩会导致 `viewBox` 变成小写
-- 2.`stroke-width` 属性指定了当前对象的轮廓的宽度。它的默认值是 1。如果使用了一个 `<percentage>`，这个值代表当前视口的百分比。如果使用了 0 值，则将不绘制轮廓。`viewBox` 变更 `stroke-width` 也需要变更。
+> - 1.svg 区分大小写， 如 `viewBox` 与 `viewbox`, `minify` 压缩会导致 `viewBox` 变成小写
+> - 2.`stroke-width` 属性指定了当前对象的轮廓的宽度。它的默认值是 1。如果使用了一个 `<percentage>`，这个值代表当前视口的百分比。如果使用了 0 值，则将不绘制轮廓。`viewBox` 变更 `stroke-width` 也需要变更。
