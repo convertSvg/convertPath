@@ -4,6 +4,9 @@ const SVGParser = require('../lib/index.js')
 const parse = SVGParser.parse('./test/test.svg', {
   plugins: [
     {
+      convertUseToGroup: true, // at first
+    },
+    {
       convertShapeToPath: true,
     },
     {
@@ -13,7 +16,7 @@ const parse = SVGParser.parse('./test/test.svg', {
       convertTransfromforPath: true,
     },
     {
-      viewBoxTransform: true, // 必须放到最后
+      viewBoxTransform: true, // at last
     },
   ],
   size: 1000,
