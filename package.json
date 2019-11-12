@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "parse": "node ./lib/index.js",
-    "ts": "node ./test/index.js"
+    "start": "node ./test/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +28,7 @@
   "dependencies": {
     "html-minifier": "^3.5.21",
     "juice": "^5.2.0",
-    "svgpath": "^2.2.1",
+    "svg-path-parse": "^1.1.3",
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
