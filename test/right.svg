@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Keyicons/align-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,7.8 L2,6.2 L10,6.2 L10,7.8 L2,7.8 Z M2,14.2 L2,12.6 L10,12.6 L10,14.2 L2,14.2 Z M2,11 L2,9.4 L18,9.4 L18,11 L2,11 Z M2,17.4 L2,15.8 L18,15.8 L18,17.4 L2,17.4 Z M2,4.6 L2,3 L18,3 L18,4.6 L2,4.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Keyicons/align-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="align-right" fill="#000000" fill-rule="nonzero" transform="translate(10.000000, 10.200000) scale(-1, 1) translate(-10.000000, -10.200000) " xlink:href="#path-1"></use>
+    </g>
+</svg>

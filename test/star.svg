@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>星球2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="17" cy="17" r="17"></circle>
+        <filter x="-20.6%" y="-14.7%" width="141.2%" height="141.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.333333333   0 0 0 0 0.419607843   0 0 0 0 0.592156863  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-79.000000, -86.000000)" fill-rule="nonzero">
+            <g id="星球" transform="translate(83.000000, 88.000000)">
+                <g id="分组-12">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#475B83" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="分组" transform="translate(17.660254, 18.928203) rotate(-30.000000) translate(-17.660254, -18.928203) translate(7.660254, 10.928203)">
+                        <path d="M2.13212693,9.45572605 C3.96294863,10.1209886 6.80667706,10.5932129 10,10.5932129 C13.1933229,10.5932129 16.0370514,10.1209886 17.8678731,9.45572605 C17.1833912,13.1789499 13.9211414,16 10,16 C6.07885862,16 2.81660879,13.1789499 2.13212693,9.45572605 Z" id="合并形状" fill="#D8DDE9"></path>
+                        <ellipse id="合并形状" fill="#FFFFFF" cx="10" cy="7.05" rx="10" ry="2.25"></ellipse>
+                        <path d="M2.06229618,6.99677812 C2.55582428,3.05202647 5.92149265,-4.88498131e-14 10,-4.88498131e-14 C14.0785073,-4.88498131e-14 17.4441757,3.05202647 17.9377038,6.99677812 C16.1098213,7.57272395 13.2342131,8 10,8 C6.76578692,8 3.89017872,7.57272395 2.06229618,6.99677812 Z" id="合并形状" fill="#D8DDE9"></path>
+                    </g>
+                    <circle id="椭圆形" fill="#D8DDE9" cx="7" cy="14" r="1"></circle>
+                    <circle id="椭圆形-copy-2" fill="#D8DDE9" cx="17.5" cy="6.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

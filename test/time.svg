@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+      <g id="shape" fill='red' transform="scale(0.1)">
+          <rect x="0" y="0" width="50" height="50"/>
+          <path d='M0 0l50 0l0 50h-50 0'/>
+          <circle cx="50" cy="50" r="50"/>
+      </g>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-26.000000, -205.000000)" fill="#A7A7A7" fill-rule="nonzero">
+            <g id="时间" transform="translate(26.000000, 205.000000)">
+                <path d="M7.5,13 C10.5375661,13 13,10.5375661 13,7.5 C13,4.46243388 10.5375661,2 7.5,2 C4.46243388,2 2,4.46243388 2,7.5 C2,10.5375661 4.46243388,13 7.5,13 Z M7.5,14.5 C3.63400675,14.5 0.5,11.3659932 0.5,7.5 C0.5,3.63400675 3.63400675,0.5 7.5,0.5 C11.3659932,0.5 14.5,3.63400675 14.5,7.5 C14.5,11.3659932 11.3659932,14.5 7.5,14.5 Z M8.30000019,7.6000061 L10.4499998,7.6000061 C10.8642134,7.6000061 11.1999998,7.93579254 11.1999998,8.3500061 C11.1999998,8.76421967 10.8642134,9.1000061 10.4499998,9.1000061 L7.75,9.1000061 C7.58944824,9.1000061 7.44067925,9.04955802 7.31867997,8.96364876 C7.01766561,8.86614865 6.80000019,8.58349357 6.80000019,8.25 L6.80000019,4.75 C6.80000019,4.33578644 7.13578663,4 7.55000019,4 C7.96421375,4 8.30000019,4.33578644 8.30000019,4.75 L8.30000019,7.6000061 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+      <symbol id="shape1" fill='red' transform="scale(0.1)">
+          <rect x="0" y="0" width="50" height="50"/>
+          <path d='M0 0l50 0l0 50h-50 0'/>
+          <circle cx="50" cy="50" r="50"/>
+      </symbol>
+
+  <use xlink:href="#shape" transform="translate(5, 10) rotate(30) translate(5, 5)"/>
+  <use xlink:href="#shape1" x="200" y="50" />
+</svg>
