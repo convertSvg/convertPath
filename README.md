@@ -78,6 +78,10 @@ console.log(parse.toSimpleSvg())
 
 #### parse.getPathAttributes
 
+## CHANGELOG
+
+[CHANGELOG.md](https://github.com/convertSvg/convertPath/blob/master/CHANGELOG.md)
+
 ## Special thanks
 
 - [SVGO](https://github.com/svg/svgo)

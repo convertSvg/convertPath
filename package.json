@@ -8,9 +8,9 @@
     "parse": "node ./lib/index.js",
     "start": "node ./test/index.js",
     "base": "standard-version --release-as 1.2.3",
-    "major": "standard-version --release-as major",
-    "minor": "standard-version --release-as minor",
-    "patch": "standard-version --release-as patch"
+    "major": "git comit -am 'chore: update changelog, version and publish' && standard-version --release-as major && npm publish",
+    "minor": "git comit -am 'chore: update changelog, version and publish' && standard-version --release-as minor && npm publish",
+    "patch": "git commit -a -m 'chore: update changelog, version and publish' && standard-version --release-as patch && npm publish"
   },
   "author": "",
   "license": "ISC",
