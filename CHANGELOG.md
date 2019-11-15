@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/pfan123/convertpath/compare/v1.2.4...v1.2.5) (2019-11-15)
+
 ### 1.2.4 (2019-11-15)
 
 ### Features
