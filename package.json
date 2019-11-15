@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "parse": "node ./lib/index.js",
     "start": "node ./test/index.js",
-    "major": "git commit -am 'chore: update changelog, version and publish' && standard-version --release-as major && npm publish",
-    "minor": "git commit -am 'chore: update changelog, version and publish' && standard-version --release-as minor && npm publish",
-    "patch": "git commit -am 'chore: update changelog, version and publish' && standard-version --release-as patch && npm publish"
+    "major": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as major && npm publish",
+    "minor": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as minor && npm publish",
+    "patch": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as patch && npm publish"
   },
   "author": "",
   "license": "ISC",
