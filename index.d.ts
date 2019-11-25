@@ -3,17 +3,18 @@
 
 interface PluginsConfing{
   plugins: Array<any>,
-  size: number,
+  size?: number,
 }
 
-export namespace SVGParser {
+declare module 'convertpath' {
   /*~ For example, given this definition, someone could write:
-   *~   import { subProp } from 'yourModule';
+   *~   import * as subProp from 'yourModule';
    *~   subProp.foo();
    *~ or
-   *~   import * as yourMod from 'yourModule';
-   *~   yourMod.subProp.foo();
+   *~   import {} from 'yourModule';
+   *~   subProp.foo();
    */
+
   export function parse(filePath: string, confing: PluginsConfing ): SVGParser;
 
   export function parseStr(dataStr: string, confing: PluginsConfing ): SVGParser;
