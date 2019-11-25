@@ -12,7 +12,7 @@
     "minor": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as minor && git push --follow-tags origin master && npm publish",
     "patch": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as patch && git push --follow-tags origin master && npm publish"
   },
-  "author": "",
+  "author": "pfan",
   "license": "ISC",
   "husky": {
     "hooks": {
