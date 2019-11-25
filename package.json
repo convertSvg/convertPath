@@ -1,6 +1,6 @@
 {
   "name": "convertpath",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "base svg element convert path",
   "main": "./lib/index.js",
   "types": "./index.d.ts",

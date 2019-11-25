@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.6](https://github.com/pfan123/convertpath/compare/v1.2.5...v1.2.6) (2019-11-25)
+
+### Features
+
+- add typescript and delete comment ([f8e9ce6](https://github.com/pfan123/convertpath/commit/f8e9ce6c862a791775689f15923b54948d828a7f))
+
 ### [1.2.5](https://github.com/pfan123/convertpath/compare/v1.2.4...v1.2.5) (2019-11-15)
 
 ### 1.2.4 (2019-11-15)
