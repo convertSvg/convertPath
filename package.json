@@ -5,7 +5,6 @@
   "main": "./lib/index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "parse": "node ./lib/index.js",
     "start": "node ./test/index.js",
     "major": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as major && git push --follow-tags origin master && npm publish",
