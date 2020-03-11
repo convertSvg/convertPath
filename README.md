@@ -79,13 +79,13 @@ console.log(parse.toSimpleSvg())
 
 #### parse.getPathAttributes
 
-## CHANGELOG
-
-[CHANGELOG.md](https://github.com/convertSvg/convertPath/blob/master/CHANGELOG.md)
-
 ## WIKI
 
 [SVG WIKI](https://github.com/convertSvg/convertPath/wiki)
+
+## CHANGELOG
+
+[CHANGELOG.md](https://github.com/convertSvg/convertPath/blob/master/CHANGELOG.md)
 
 ## Special thanks
 
