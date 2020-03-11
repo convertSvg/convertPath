@@ -1,7 +1,7 @@
 const fs = require('fs')
 const SVGParser = require('../lib/index.js')
 
-const parse = SVGParser.parse('./test/test.svg', {
+const parse = SVGParser.parse('./test/svgGradient.svg', {
   plugins: [
     {
       convertUseToGroup: true, // at first
@@ -14,6 +14,9 @@ const parse = SVGParser.parse('./test/test.svg', {
     },
     {
       convertTransfromforPath: true,
+    },
+    {
+      removeGradient: true,
     },
     {
       viewBoxTransform: true, // at last

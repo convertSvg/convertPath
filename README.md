@@ -21,6 +21,7 @@ Today we have:
 | [convertShapeToPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertShapeToPath.js)           | convert svg shape elements into path svg elements.                       |
 | [removeGroups](https://github.com/pfan123/convertpath/blob/master/lib/filter/removeGroups.js)                       | move some group and move some group attributes to the contained elements |
 | [convertTransfromforPath](https://github.com/pfan123/convertpath/blob/master/lib/filter/convertTransfromforPath.js) | remove transform attribute and convert path data to relative             |
+| [removeGradient](https://github.com/pfan123/convertpath/blob/master/lib/filter/removeGradient.js)                   | remove gradient if reference via url('#id')                              |
 | [viewBoxTransform](https://github.com/pfan123/convertpath/blob/master/lib/filter/viewBoxTransform.js)               | remove width/height attributes and reset ViewBox                         |
 
 ## Usage
