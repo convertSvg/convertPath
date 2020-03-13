@@ -1,7 +1,7 @@
 const fs = require('fs')
 const SVGParser = require('../lib/index.js')
 
-const parse = SVGParser.parse('./test/svgGradient.svg', {
+const parse = SVGParser.parse('./test/xxgroup.svg', {
   plugins: [
     {
       convertUseToGroup: true, // at first
@@ -31,4 +31,4 @@ console.log(result)
 const paths = parse.getPathAttributes()
 console.log(paths)
 
-fs.writeFileSync('./test/result.svg', result, 'utf-8')
+fs.writeFileSync('./test/xxgroup111.svg', result, 'utf-8')
