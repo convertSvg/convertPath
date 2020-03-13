@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.10](https://github.com/pfan123/convertpath/compare/v1.2.9...v1.2.10) (2020-03-13)
+
+### Features
+
+- **gradient:** Gradient is removed if reference via url(#id) ([7de40c3](https://github.com/pfan123/convertpath/commit/7de40c392fa706834fb23b0db1f4eb0213342538))
+
+### Bug Fixes
+
+- curve path ([0665a35](https://github.com/pfan123/convertpath/commit/0665a35d66d9823cf438729aa7cc10b6670c053d))
+
 ## [1.4.0](https://github.com/pfan123/convertpath/compare/v1.2.9...v1.4.0) (2020-03-13)
 
 ### Features
