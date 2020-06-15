@@ -7,6 +7,7 @@
   "scripts": {
     "parse": "node ./lib/index.js",
     "start": "node ./test/index.js",
+    "test": "jest --coverage",
     "major": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as major && git push --follow-tags origin master && npm publish",
     "minor": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as minor && git push --follow-tags origin master && npm publish",
     "patch": "git commit -am 'docs: update changelog, version and publish' && standard-version --release-as patch && git push --follow-tags origin master && npm publish"
@@ -47,6 +48,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^1.3.1",
+    "jest": "^26.0.1",
     "lint-staged": "^8.1.4",
     "prettier": "^1.16.4",
     "standard-version": "^7.0.0"
