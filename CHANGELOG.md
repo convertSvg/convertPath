@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/pfan123/convertpath/compare/v1.2.10...v1.3.0) (2020-11-05)
+
+### Features
+
+- add commitlint ([062395d](https://github.com/pfan123/convertpath/commit/062395dd1ee497d74d3bd4a9c2c2331e3bcce790))
+- **test:** add jest test ([12bf733](https://github.com/pfan123/convertpath/commit/12bf733aebdaadea5f940c65845a5b61986e8985))
+- **test:** add removeGroups test ([5ef551a](https://github.com/pfan123/convertpath/commit/5ef551af85b4e39b8eed3f51887c9d09d5647f32))
+- **test:** add removeGroups.test.js ([8772ce3](https://github.com/pfan123/convertpath/commit/8772ce309089392028fc8a14b7d9123e386c306c))
+- add coverage ([73ee847](https://github.com/pfan123/convertpath/commit/73ee8476d1237657d8fd8e9e1a4498e73971c8e8))
+- modify commitlint.config.js ([33a803c](https://github.com/pfan123/convertpath/commit/33a803c616519fe12b0d0e903e93f02ba1768e62))
+- modify commitlint.config.js ([6e77304](https://github.com/pfan123/convertpath/commit/6e77304eaf2a0e6efd6e4294613b25605b6851aa))
+- modify commitlint.config.js ([587059a](https://github.com/pfan123/convertpath/commit/587059a6b3c7aa2e4b50462dcc9ff4e907722075))
+- support transform viewbox position to center ([46fd8af](https://github.com/pfan123/convertpath/commit/46fd8af0104939759f4c7b8173f066d866f3089a))
+
+### Bug Fixes
+
+- update params name ([bbdd779](https://github.com/pfan123/convertpath/commit/bbdd779c76588a4df63af77d6939c7c02a2681da))
+
 ### [1.2.10](https://github.com/pfan123/convertpath/compare/v1.2.9...v1.2.10) (2020-03-13)
 
 ### Features
